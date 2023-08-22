@@ -1,0 +1,47 @@
+var Duration = [
+    {
+        "name": "Try a relaxing act",
+        "duration": "2.3 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Take Supplement",
+        "duration": "2 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Practice gratitud",
+        "duration": "2.6 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Stay connected",
+        "duration": "5 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Eat healthy reg",
+        "duration": "23 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Get regular Wal",
+        "duration": "9 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Stay Hydratede",
+        "duration": "1 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Focus on positiv",
+        "duration": "1 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    },  
+    {
+        "name": "Rest , Relaxation",
+        "duration": "1 hours",
+        "url": "https://www.youtube.com/embed/KJwYBJMSbPI"
+    }
+]

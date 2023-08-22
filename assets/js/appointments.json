@@ -1,0 +1,57 @@
+var Appointments = [
+    {
+        "name": "Appointment For Root Canal",
+        "Doctor": "Dr. Mehak",
+        "Timing": "3-Aug"
+    },
+    {
+        "name": "General Check-up",
+        "Doctor": "Dr. John",
+        "Timing": "5-Aug"
+    },
+    {
+        "name": "Dental Cleaning",
+        "Doctor": "Dr. Smith",
+        "Timing": "6-Aug"
+    },
+    {
+        "name": "Eye Examination",
+        "Doctor": "Dr. Patel",
+        "Timing": "7-Aug"
+    },
+    {
+        "name": "Physical Therapy Session",
+        "Doctor": "Dr. Johnson",
+        "Timing": "8-Aug"
+    },
+    {
+        "name": "Nutrition Consultation",
+        "Doctor": "Dr. Williams",
+        "Timing": "9-Aug"
+    },
+    {
+        "name": "Orthopedic Consultation",
+        "Doctor": "Dr. Garcia",
+        "Timing": "10-Aug"
+    },
+    {
+        "name": "Dermatology Appointment",
+        "Doctor": "Dr. Brown",
+        "Timing": "11-Aug"
+    },
+    {
+        "name": "Chiropractic Session",
+        "Doctor": "Dr. Miller",
+        "Timing": "12-Aug"
+    },
+    {
+        "name": "Prenatal Check-up",
+        "Doctor": "Dr. Taylor",
+        "Timing": "13-Aug"
+    },
+    {
+        "name": "Pediatric Consultation",
+        "Doctor": "Dr. Martinez",
+        "Timing": "14-Aug"
+    }
+]

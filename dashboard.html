@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HospitalPlus</title>
+    <link rel="shortcut icon" href="Assets/IMG/favicon.png" type="image/x-icon">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="Assets/CSS/dashboard.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="Assets/CSS/font.css">
+
+    <!-- Swup Animation -->
+    <script defer src="node_modules/swup/dist/Swup.cjs"></script>
+    <script defer src="Assets/JS/masterjs.js"></script>
+</head>
+
+<body onload="startTime()">
+
+    <!-- Notification to Display -->
+    <div class="notification" id="notification">
+        Welcome Back Display Flex!
+        <span class="close-button" onclick="closeNotification()">X</span>
+      </div>
+
+
+    <!-- Sidebar -->
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo_container">
+                <h2 class="Logo">HealthPlus</h2>
+            </div>
+            <div class="navigations">
+                <h3>Options</h3>
+                <nav>
+                    <a href="./Dashboard.html" class="nav-menu active">
+                        <img src="Assets/IMG/dashboard-tichu.png" alt="Dashboard">
+                        Dashbaord
+                    </a>
+
+                    <a href="./Appointments.html" class="nav-menu">
+                        <img src="Assets/IMG/Appointment-tichu.png" alt="Appointments">
+                        Appointments
+                    </a>
+
+                    <a href="./Health-Vitals.html" class="nav-menu">
+                        <img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas">
+                        Health Vitals
+                    </a>
+
+                    <a href="./Medical-Dosage.html" class="nav-menu">
+                        <img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage">
+                        Medical Dosage
+                    </a>
+
+                    <a href="./selfHealthTips.html" class="nav-menu">
+                        <img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips">
+                        Self-Health Tips
+                    </a>
+
+                    <a href="./Health-Measure.html" class="nav-menu">
+                        <img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips">
+                        Health Measure Tips
+                    </a>
+
+                    <a href="./feedback.html" class="nav-menu">
+                        <img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks">
+                        Feedbacks
+                    </a>
+
+                    <a href="./contact.html" class="nav-menu">
+                        <img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us">
+                        Contact Us
+                    </a>
+                </nav>
+            </div>
+            <div class="profile-container">
+                <div>
+                    <img src="Assets/IMG/logo.png" alt="" class="profile-picture">
+                    <h2>Display Flex</h2>
+                </div>
+                <a href="./index.html"><button class="btn">Logout</button></a>
+            </div>
+        </div>
+        <div class="mobile-menu-siderbar">
+            <a href="./dashboard.html">
+                <div class="mobile-nav-menu active"><img src="Assets/IMG/dashboard-tichu.png" alt="Dashbaord"></div>
+            </a>
+            <a href="./Appointments.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Appointment-tichu.png" alt="Appointments"></div>
+            </a>
+            <a href="./Health-Vitals.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas"></div>
+            </a>
+            <a href="./Medical-Dosage.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage"></div>
+            </a>
+            <a href="./selfHealthTips.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Health-Measure.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Feedback.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks"></div>
+            </a>
+            <a href="./contact.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us"></div>
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content transition-fade" id="swup">
+            <h2>Overall Stats</h2>
+            <div class="dashboard-container">
+                <div class="appointment-container">
+                    <div class="header-container">
+                        <div class="title-header">
+                            <h2>Appointments</h2>
+                        </div>
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <h3>Appointment Name</h3>
+                            </div>
+                            <div class="doctor">
+                                <h3>Doctor</h3>
+                            </div>
+                            <div class="date">
+                                <h3>Date</h3>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <p>Appointment For Root Canal</p>
+                            </div>
+                            <div class="doctor">
+                                <p>Dr. Mehak</p>
+                            </div>
+                            <div class="date">
+                                <p>3-Aug</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <p>General Check-up</p>
+                            </div>
+                            <div class="doctor">
+                                <p>
+                                    Dr. John</p>
+                            </div>
+                            <div class="date">
+                                <p>
+                                    3-Aug</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <p>Dental Cleaning</p>
+                            </div>
+                            <div class="doctor">
+                                <p>
+                                    Dr. Smith</p>
+                            </div>
+                            <div class="date">
+                                <p>
+                                    6-Aug</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <p>Eye Examination</p>
+                            </div>
+                            <div class="doctor">
+                                <p>
+                                    Dr. Patel</p>
+                            </div>
+                            <div class="date">
+                                <p>
+                                    7-Aug</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <p>Physical Therapy Session
+
+                                </p>
+                            </div>
+                            <div class="doctor">
+                                <p>Dr. Johnson
+
+                                </p>
+                            </div>
+                            <div class="date">
+                                <p>
+                                    8-Aug</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <p>Appointment Name</p>
+                            </div>
+                            <div class="doctor">
+                                <p>Doctor</p>
+                            </div>
+                            <div class="date">
+                                <p>Date</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="AppointmentName">
+                                <p>Nutrition Consultation</p>
+                            </div>
+                            <div class="doctor">
+                                <p>
+                                    Dr. Williams</p>
+                            </div>
+                            <div class="date">
+                                <p>
+                                    9-Aug</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                    </div>
+                </div>
+                <div class="dosage-container">
+                    <div class="header-container">
+                        <div class="title-header">
+                            <h3>Dosage</h3>
+                        </div>
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <h3>Name</h3>
+                            </div>
+                            <div class="Timing">
+                                <h3>Timing</h3>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <p>Panadol</p>
+                            </div>
+                            <div class="Timing">
+                                <p>08:00 PM</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <p>Vitamin D</p>
+                            </div>
+                            <div class="Timing">
+                                <p>10:30 AM</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <p>Antihistamine</p>
+                            </div>
+                            <div class="Timing">
+                                <p>
+                                    02:15 PM</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <p>Insulin
+
+                                </p>
+                            </div>
+                            <div class="Timing">
+                                <p>
+                                    07:45 AM</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <p>Allergy Medication
+
+                                </p>
+                            </div>
+                            <div class="Timing">
+                                <p>04:00 PM</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <p>Pain Relief Gel</p>
+                            </div>
+                            <div class="Timing">
+                                <p>01:00 PM </p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                        <div class="content-header">
+                            <div class="DosageName">
+                                <p>Cough Syrup
+
+                                </p>
+                            </div>
+                            <div class="Timing">
+                                <p>
+                                    05:30 PM</p>
+                            </div>
+                        </div>
+                        <hr class="border">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="chart-container">
+                <div class="chartBack">
+                    <canvas id="bpchart"></canvas>
+                </div>
+                <div class="chartBack">
+                    <canvas id="weightChart"></canvas>
+                </div>
+                <div class="chartBack">
+                    <canvas id="SugarChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Live TImer -->
+            <div class="liveTimer">
+                <div id="txt"></div>
+            </div>
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="Assets/JS/dashboard.js"></script>
+</body>
+
+</html>

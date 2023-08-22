@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Health Tips - HospitalPlus</title>
+    <link rel="shortcut icon" href="Assets/IMG/favicon.png" type="image/x-icon">
+
+
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="Assets/CSS/healthVitals.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="Assets/CSS/font.css">
+
+
+</head>
+
+<body onload="startTime()">
+    <!-- Sidebar -->
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo_container">
+                <h2 class="Logo">HealthPlus</h2>
+            </div>
+            <div class="navigations">
+                <h3>Options</h3>
+                <nav>
+                    <a href="./Dashboard.html" class="nav-menu">
+                        <img src="Assets/IMG/dashboard-tichu.png" alt="Dashboard">
+                        <div>Dashbaord</div>
+                    </a>
+
+                    <a href="./Appointments.html" class="nav-menu">
+                        <img src="Assets/IMG/Appointment-tichu.png" alt="Appointments">
+                        <div>Appointments</div>
+                    </a>
+
+                    <a href="./Health-Vitals.html" class="nav-menu active">
+                        <img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas">
+                        <div>Health Vitals</div>
+                    </a>
+
+                    <a href="./Medical-Dosage.html" class="nav-menu">
+                        <img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage">
+                        <div>Medical Dosage</div>
+                    </a>
+
+                    <a href="./selfHealthTips.html" class="nav-menu">
+                        <img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips">
+                        <div>Self-Health Tips</div>
+                    </a>
+
+                    <a href="./Health-Measure.html" class="nav-menu">
+                        <img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips">
+                        <div>Health Measure Tips</div>
+                    </a>
+
+                    <a href="./feedback.html" class="nav-menu">
+                        <img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks">
+                        <div>Feedbacks</div>
+                    </a>
+
+                    <a href="./contact.html" class="nav-menu">
+                        <img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us">
+                        <div>Contact Us</div>
+                    </a>
+
+                </nav>
+            </div>
+            <div class="profile-container">
+                <div>
+                    <img src="Assets/IMG/logo.png" alt="" class="profile-picture">
+                    <h2>Display Flex</h2>
+                </div>
+                <a href="./index.html"><button class="btn">Logout</button></a>
+            </div>
+        </div>
+        <div class="mobile-menu-siderbar">
+            <a href="./dashboard.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/dashboard-tichu.png" alt="Dashbaord"></div>
+            </a>
+            <a href="./Appointments.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Appointment-tichu.png" alt="Appointments"></div>
+            </a>
+            <a href="./Health-Vitals.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas"></div>
+            </a>
+            <a href="./Medical-Dosage.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage"></div>
+            </a>
+            <a href="./selfHealthTips.html">
+                <div class="mobile-nav-menu active"><img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Health-Measure.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Feedback.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks"></div>
+            </a>
+            <a href="./contact.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us"></div>
+            </a>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="health-vitals-container">
+                <h2>Health Vitals</h2>
+                <button id="AddHealthVitals">Add Health Vitals</button>
+            </div>
+            <div class="health-vital-Container">
+                <div class="graph">
+                    <div class="graphtop">
+                        <div class="status">
+                            <h2>blood pressure</h2>
+                            <canvas id="lineChart"></canvas>
+                        </div>
+                        <div class="status">
+                            <h2>Overall Weight</h2>
+                            <canvas id="barchart"></canvas>
+                        </div>
+                    </div>
+                    <div class="status">
+                        <h2>glucose level</h2>
+                        <canvas id="lineChart3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-container">
+            <div class="popup">
+                <h2>Add Your Health Vitals</h2>
+                <form action="#">
+                    <div class="form-controls">
+                        <div class="name">
+                            <input type="text" name="Name" id="Name" placeholder="Enter Your Current Blood Pressure"
+                                required>
+                        </div>
+                        <div class="doctor">
+                            <input type="text" name="doctors" id="doctor" placeholder="Enter Your Current Weight"
+                                required>
+                        </div>
+                        <div class="doctor">
+                            <input type="text" name="Pills" id="Pills" placeholder="Enter Your Current Sugar Level"
+                                required>
+                        </div>
+                        <div class="date-time">
+                            <input type="date" name="date" id="Date-day">
+                        </div>
+                        <div class="DoeaseReason">
+                            <textarea name="DosageD" id="Dosage" placeholder="Write Few Lines About Your Progress"
+                                rows="10" required></textarea>
+                        </div>
+                        <button id="submit">Submit</button>
+                        <button id="cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Live TImer -->
+        <div class="liveTimer">
+            <div id="txt"></div>
+        </div>
+        <script>
+            function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+            }
+
+            function checkTime(i) {
+                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+
+        <!-- <script src="Assets/JS/Duration.json"></script> -->
+        <script src="Assets/JS/healthvitals.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./Assets/JS/chart.js"></script>
+        <script src="./Assets/JS/chart2.js"></script>
+        <script src="./Assets/JS/chart3.js"></script>
+</body>
+
+</html>

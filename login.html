@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- fontawesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Link -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="Assets/CSS/bootstrap/bootstrap.min.css">
+    <!-- fontawesome Library End -->
+    <link rel="stylesheet" href="Assets/CSS/Login&Signup.css">
+    <link rel="icon" href="Images/Health Care LOGO.png">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="Assets/CSS/font.css">
+
+    <title>Login Page</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-lg-6 lg-form-side">
+                                <div class="card-body p-md-5 mx-md-4">
+                                    <div class="text-center col-md-12">
+                                        <img src="Assets/IMG/Health Care LOGO.png" alt="logo" height="200px">
+                                        <h3 style="color: #56d6de;" class="mb-5 fw-bold logo-name"><span
+                                                style="color: #92cd4e;">Health</span> Care</h3>
+                                    </div>
+                                    <form>
+                                        <h4 class="mb-4 text-center login-heading mb-5">Please Login to Proceed
+                                        </h4>
+                                        <div class="form-group mb-4">
+                                            <div class="input-group">
+                                                <input type="email" id="lg-email" class="form-control"
+                                                    placeholder="Enter Your Username">
+                                                <span class="input-group-text">
+                                                    <i class="fa-solid fa-square-envelope"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <div class="input-group">
+                                                <input type="password" id="lg-password" class="form-control"
+                                                    placeholder="Enter Your Password">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-eye pass-show"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-center pt-1 mb-3 pb-1">
+                                            <button class="btn lg-btn mb-3 px-5" target="self"
+                                                onclick="login()">Login</button>
+                                            <!-- <a href="Project.html" class="form-control btn btn-primary">Login</a> -->
+                                            <div>
+                                                <a href="/Forgot_Password.html" class=" text-dark">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 text-center">
+                                            <button class="btn"><i id="lg-icon1"
+                                                    class="fa-2xl fa-brands fa-facebook fa-beat"></i></button>
+                                            <button class="btn"><i id="lg-icon2"
+                                                    class="fa-2xl fa-brands fa-google fa-beat"></i></button>
+                                            <button class="btn"><i id="lg-icon3"
+                                                    class="fa-2xl fa-brands fa-whatsapp fa-beat"></i></button>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center pb-4">
+                                            <p class="mb-0 me-2">Don't have an Account?</p>
+                                            <button class="btn crt-acc-btn" onclick="Crt_Acc()">Create Account</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center lg_text_page lg-description-area">
+                                <div class="text-center px-3 py-4 p-md-5 mx-md-4">
+                                    <h3 class="mb-4">We Are Here To Look After</h3>
+                                    <p>"At Health Care, we are committed to guiding you on your journey to a healthier
+                                        and happier life. Our mission is to empower individuals with the knowledge,
+                                        tools, and support they need to make informed decisions about their health.
+                                        Whether you're seeking fitness guidance, nutritional advice, mental wellness
+                                        strategies, or expert medical insights, we've got you covered."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- External Javascript Link -->
+    <script src="Assets/JS/main.js"></script>
+    <!-- Bootstrap Link -->
+    <script src="Assets/JS/boostrap/bootstrap.min.js"></script>
+    <!-- Font Awesome File Link -->
+    <script src="https://use.fontawesome.com/065f79e908.js"></script>
+</body>
+
+</html>

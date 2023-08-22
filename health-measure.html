@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Measures - HospitalPlus</title>
+    <link rel="shortcut icon" href="Assets/IMG/favicon.png" type="image/x-icon">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="Assets/CSS/selfHelath.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="Assets/CSS/font.css">
+
+
+</head>
+
+<body onload="startTime()">
+    <!-- Sidebar -->
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo_container">
+                <h2 class="Logo">HealthPlus</h2>
+            </div>
+            <div class="navigations">
+                <h3>Options</h3>
+                <nav>
+                    <a href="./Dashboard.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/dashboard-tichu.png" alt="Dashboard">
+                            Dashbaord
+                        </div>
+                    </a>
+                    <a href="./Appointments.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/Appointment-tichu.png" alt="Appointments">
+                            Appointments
+                        </div>
+                    </a>
+                    <a href="./Health-Vitals.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas">
+                            Health Vitals
+                        </div>
+                    </a>
+                    <a href="./Medical-Dosage.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage">
+                            Medical Dosage
+                        </div>
+                    </a>
+                    <a href="./selfHealthTips.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips">
+                            Self-Health Tips
+                        </div>
+                    </a>
+                    <a href="./selfHealthTips.html">
+                        <div class="nav-menu active">
+                            <img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips">
+                            Health Measure Tips
+                        </div>
+                    </a>
+                    <a href="./feedback.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks">
+                            Feedbacks
+                        </div>
+                    </a>
+                    <a href="./contact.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us">
+                            Contact Us
+                        </div>
+                    </a>
+
+                </nav>
+            </div>
+            <div class="profile-container">
+                <div>
+                    <img src="Assets/IMG/logo.png" alt="" class="profile-picture">
+                    <h2>Display Flex</h2>
+                </div>
+                <a href="./index.html"><button class="btn">Logout</button></a>
+            </div>
+        </div>
+        <div class="mobile-menu-siderbar">
+            <a href="./dashboard.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/dashboard-tichu.png" alt="Dashbaord"></div>
+            </a>
+            <a href="./Appointments.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Appointment-tichu.png" alt="Appointments"></div>
+            </a>
+            <a href="./Health-Vitals.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas"></div>
+            </a>
+            <a href="./Medical-Dosage.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage"></div>
+            </a>
+            <a href="./selfHealthTips.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Health-Measure.html">
+                <div class="mobile-nav-menu active"><img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Feedback.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks"></div>
+            </a>
+            <a href="./contact.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us"></div>
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Health Measures</h2>
+            <div class="medical-dosage-container">
+                <div class="header-content">
+                    <h2>Health Tips Audio</h2>
+                </div>
+                <div class="details-header">
+                    <div class="name-container">
+                        <h3>Name</h3>
+                    </div>
+                    <div class="reff">
+                        <h3>Duration</h3>
+                    </div>
+                </div>
+                <hr class="border">
+                <div class="details-continaer" id="MainDetailsContainer">
+                    <!-- <div class="details-header">
+                        <div class="name-container">
+                            <p>How One Can Be Healthy</p>
+                        </div>
+                        <div class="reff">
+                            <p>10 Mins</p>
+                        </div>
+                        <div class="Day">
+                            <button class="btn editbtns" id="playButton">Play</button>
+                        </div>
+                        <audio id="audioPlayer" controls style="display: none;">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <hr class="border"> -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Live TImer -->
+        <div class="liveTimer">
+            <div id="txt"></div>
+        </div>
+        <script>
+            function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+            }
+
+            function checkTime(i) {
+                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                return i;
+            }
+
+
+
+        </script>
+        <script src="Assets/JS/Duration.json"></script>
+        <script src="Assets/JS/audio.js"></script>
+</body>
+
+</html>

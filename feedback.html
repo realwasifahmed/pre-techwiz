@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dosage - HospitalPlus</title>
+    <link rel="shortcut icon" href="Assets/IMG/favicon.png" type="image/x-icon">
+
+
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="Assets/CSS/feedback.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="Assets/CSS/font.css">
+
+
+</head>
+
+<body onload="startTime()">
+    <!-- Sidebar -->
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo_container">
+                <h2 class="Logo">HealthPlus</h2>
+            </div>
+            <div class="navigations">
+                <h3>Options</h3>
+                <nav>
+                    <a href="./Dashboard.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/dashboard-tichu.png" alt="Dashboard">
+                            Dashbaord
+                        </div>
+                    </a>
+                    <a href="./Appointments.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/Appointment-tichu.png" alt="Appointments">
+                            Appointments
+                        </div>
+                    </a>
+                    <a href="./Health-Vitals.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas">
+                            Health Vitals
+                        </div>
+                    </a>
+                    <a href="./Medical-Dosage.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage">
+                            Medical Dosage
+                        </div>
+                    </a>
+                    <a href="./selfHealthTips.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips">
+                            Self-Health Tips
+                        </div>
+                    </a>
+                    <a href="./Health-Measure.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips">
+                            Health Measure Tips
+                        </div>
+                    </a>
+                    <a href="./feedback.html">
+                        <div class="nav-menu active">
+                            <img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks">
+                            Feedbacks
+                        </div>
+                    </a>
+                    <a href="./contact.html">
+                        <div class="nav-menu">
+                            <img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us">
+                            Contact Us
+                        </div>
+                    </a>
+
+                </nav>
+            </div>
+            <div class="profile-container">
+                <div>
+                    <img src="Assets/IMG/logo.png" alt="" class="profile-picture">
+                    <h2>Display Flex</h2>
+                </div>
+                <a href="./index.html"><button class="btn">Logout</button></a>
+            </div>
+        </div>
+        <div class="mobile-menu-siderbar">
+            <a href="./dashboard.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/dashboard-tichu.png" alt="Dashbaord"></div>
+            </a>
+            <a href="./Appointments.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Appointment-tichu.png" alt="Appointments"></div>
+            </a>
+            <a href="./Health-Vitals.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/Health-tichu.png" alt="Health-Vitas"></div>
+            </a>
+            <a href="./Medical-Dosage.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/dosage-tichu.png" alt="Medical-Dosage"></div>
+            </a>
+            <a href="./selfHealthTips.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/video-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Health-Measure.html">
+                <div class="mobile-nav-menu"><img src="Assets/IMG/audio-tichu.png" alt="Self-Health-Tips"></div>
+            </a>
+            <a href="./Feedback.html">
+                <div class="mobile-nav-menu active"><img src="Assets/IMG/Feedback-tichu.png" alt="Feedbacks"></div>
+            </a>
+            <a href="./contact.html">
+                <div class="mobile-nav-menu "><img src="Assets/IMG/Contact-tichu.png" alt="Contact-Us"></div>
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="feedback-container">
+                <h2>FeedBack</h2>
+                <button id="addAppointment">Add Your FeedBack</button>
+            </div>
+            <div class="medical-dosage-container">
+                <div class="main1">
+                    <div class="container1">
+                        <div class="indicate">
+                            <span class="btnmain activemain"></span>
+                            <span class="btnmain"></span>
+                            <span class="btnmain"></span>
+                            <span class="btnmain"></span>
+                        </div>
+                        <div class="testimonial">
+                            <div class="slide-row " id="slide">
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>"HealthPlus is a game-changer! It streamlines health management with an
+                                            intuitive dashboard, easy appointment scheduling, and comprehensive vitals
+                                            tracking. A must-have for a healthier lifestyle."
+                                        <p>
+                                        <h3>Sara</h3>
+                                        <p>Sara.Inc</p>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="Assets/IMG/testi1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>"HealthPlus exceeded my expectations. The interactive dashboard, appointment
+                                            management, and health vitals tracking are invaluable. It's become my
+                                            trusted health companion."
+                                        </p>
+                                        <h3>zarab</h3>
+                                        <p>Zarab.Inc</p>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="Assets/IMG/testi2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>"I'm blown away by HealthPlus. Tracking health vitals, managing appointments,
+                                            and accessing informative health tips have never been easier. A
+                                            user-friendly gem for better well-being."</p>
+                                        <h3>Chris</h3>
+                                        <p>Chris.Inc</p>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="Assets/IMG/testi3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>HealthPlus is a remarkable tool for health management. Its user-friendly
+                                            interface, efficient appointment scheduling, and insightful vitals tracking
+                                            make it an essential part of my well-being journey.</p>
+                                        <h3>Meera</h3>
+                                        <p>Meera.Inc</p>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="Assets/IMG/testi4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-container">
+                <div class="popup">
+                    <h2>Add Your FeedBack</h2>
+                    <form action="#">
+                        <div class="form-controls">
+                            <div class="name">
+                                <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+                            </div>
+                            <div class="doctor">
+                                <input type="email" name="doctors" id="doctor" placeholder="Your email" required>
+                            </div>
+                            <!-- <div class="doctor">
+                            <input type="file" name="Pills" id="Pills" placeholder="Number Of Pills You Have?">
+                        </div> -->
+                            <!-- <div class="date-time">
+                            <input type="date" name="date" id="Date-day">
+                        </div> -->
+                            <div class="DoeaseReason">
+                                <textarea name="DosageD" id="Dosage" placeholder="Write a Your FeedBack (In Breif)"
+                                    rows="10" required></textarea>
+                            </div>
+                            <button id="submit">Submit</button>
+                            <button id="cancel">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Popup After Successfull Submission -->
+            <!-- <div class="submit-container">
+                <div class="SubmitPopup">
+                    <img src="Assets/IMG/tick-tichu.png" alt="">
+                    <h2>Your Form Has Been Submitted Successfully</h2>
+                    <img src="Assets/IMG/cross-tichu.png" alt="close" id="close">
+                </div>
+            </div> -->
+
+
+            <!-- Live TImer -->
+            <div class="liveTimer">
+                <div id="txt"></div>
+            </div>
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+            <script src="Assets/JS/feedback.js"></script>
+</body>
+
+</html>

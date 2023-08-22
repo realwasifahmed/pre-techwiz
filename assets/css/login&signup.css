@@ -1,0 +1,182 @@
+/* Login & Signup Page Css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Main Card CSS & Animation Code */
+.card {
+    /* background-color: #5FD6DE4F; */
+    /* background-image: linear-gradient(to right, #56D6DE38,#5FD6DE); */
+    border: none;
+    animation: mymove 3s infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes mymove {
+    0% {
+        animation-delay: 5s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    25% {
+        animation-delay: 5s;
+        box-shadow: 0 4px 8px 0 #caf699, 0 6px 20px 0 #aeed66;
+    }
+
+    50% {
+        animation-delay: 5s;
+        box-shadow: 0 2px 6px 0 #5FD6DE, 0 4px 18px 0 #5FD6DE38;
+
+    }
+
+    75% {
+        animation-delay: 5s;
+        box-shadow: 0 2px 6px 0 #caf699, 0 4px 18px 0 #aeed66;
+
+    }
+
+    100% {
+        animation-delay: 5s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+}
+
+/* Main Card CSS & Animation Code */
+
+.lg-btn {
+    border: 2px solid black;
+    color: black;
+    background-color: #89e8ef;
+}
+
+.lg-btn:hover {
+    background-color: #caf699;
+    color: black;
+    border: 2px solid black;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+.lg-description-area {
+    background-color: #56d6de;
+}
+
+#lg-icon1 {
+    color: #3B5998;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+#lg-icon1:hover {
+    transform: scale(1.5);
+    animation: none;
+}
+
+#lg-icon2 {
+    color: #c71610;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+#lg-icon2:hover {
+    transform: scale(1.5);
+    animation: none;
+}
+
+#lg-icon3 {
+    color: #128C7E;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+#lg-icon3:hover {
+    transform: scale(1.5);
+    animation: none;
+}
+
+.crt-acc-btn {
+    border: 2px solid black;
+    color: Black;
+    background-color: #caf699;
+}
+
+.crt-acc-btn:hover {
+    background-color: #89e8ef;
+    color: black;
+    border: 2px solid black;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+/* Login & Signup Page Css */
+/* Signup Page CSS Start */
+.sp-btn {
+    border: 2px solid black;
+    color: Black;
+    background-color: #caf699;
+}
+
+.sp-btn:hover {
+    background-color: #89e8ef;
+    color: black;
+    border: 2px solid black;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+#sp-icon1 {
+    color: #3B5998;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+#sp-icon1:hover {
+    transform: scale(1.5);
+    animation: none;
+}
+
+#sp-icon2 {
+    color: #c71610;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+#sp-icon2:hover {
+    transform: scale(1.5);
+    animation: none;
+}
+
+#sp-icon3 {
+    color: #128C7E;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+#sp-icon3:hover {
+    transform: scale(1.5);
+    animation: none;
+}
+
+.sp-description-area {
+    background-color: #56d6de;
+}
+
+/* Signup Page CSS End */
+/* Forgot Password Css Start */
+.fg-btn {
+    border: 2px solid black;
+    color: black;
+    background-color: #89e8ef;
+}
+
+.fg-btn:hover {
+    background-color: #caf699;
+    color: black;
+    border: 2px solid black;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+/* Forgot Password Css End */
